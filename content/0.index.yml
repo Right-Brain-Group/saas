@@ -11,7 +11,7 @@ hero:
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Power Up
-      to: '/signup'
+      to: https://calendar.app.google/PFyuyKtnQiTH1J4g9
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -20,7 +20,7 @@ hero:
       icon: i-simple-icons-github
       size: xl
       color: gray
-      to: https://github.com/nuxt-ui-pro/saas
+      to: https://github.com/Right-Brain-Group-LLC
       target: _blank
 sections:
   - title: We find our clients wanted to achieve their yearly goals,

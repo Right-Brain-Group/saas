@@ -54,7 +54,7 @@ useSeoMeta({
     </AppLandingHero>
 
     <ULandingSection class="!pt-0">
-      <NuxtImg src="/images/app_mockup2.png" />
+      <NuxtImg src="/images/people.svg" />
     </ULandingSection>
 
     <ULandingSection

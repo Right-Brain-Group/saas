@@ -4,12 +4,12 @@ import type { NavItem } from '@nuxt/content/dist/runtime/types'
 const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
 
 const links = [{
-  label: 'Process',
-  to: '/docs'
-}, {
-  label: 'Blog',
-  to: '/blog'
-}, {
+//   label: 'Process',
+//   to: '/docs'
+// }, {
+//   label: 'Blog',
+//   to: '/blog'
+// }, {
   label: 'Contact',
   to: 'https://calendar.app.google/PFyuyKtnQiTH1J4g9'
 }]
@@ -52,7 +52,7 @@ const appConfig = useAppConfig()
         class="hidden lg:flex"
       /> -->
       
-      <UTooltip text="Search" :shortcuts="['⌘', 'k']">
+      <!-- <UTooltip text="Search" :shortcuts="['⌘', 'k']">
         <UButton
           :icon="appConfig.ui.icons.search"
           v-bind="((!!label ? $ui?.button?.input : $ui?.button?.secondary) as any)"
@@ -60,7 +60,7 @@ const appConfig = useAppConfig()
           :class="[!!label && 'flex-1 border-0 ring-0']"
           @click="toggleContentSearch"
         ></UButton>
-      </UTooltip>
+      </UTooltip> -->
       <UColorModeButton />
     </template>
 
