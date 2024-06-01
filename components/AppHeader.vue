@@ -4,21 +4,33 @@ import type { NavItem } from '@nuxt/content/dist/runtime/types'
 const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
 
 const links = [{
-  label: 'Docs',
+  label: 'Process',
   to: '/docs'
-}, {
-  label: 'Pricing',
-  to: '/pricing'
 }, {
   label: 'Blog',
   to: '/blog'
+}, {
+  label: 'Contact',
+  to: 'https://calendar.app.google/PFyuyKtnQiTH1J4g9'
 }]
+
+const appConfig = useAppConfig()
+  const { toggleContentSearch } = useUIState()
+  const { metaSymbol } = useShortcuts()
+  
+  defineProps({
+    label: {
+      type: String,
+      default: 'Search...'
+    }
+  })
 </script>
 
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge
+      <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto"/>
+      <h2>Right Brain Group</h2> <UBadge
         label="SaaS"
         variant="subtle"
         class="mb-0.5"
@@ -26,7 +38,7 @@ const links = [{
     </template>
 
     <template #right>
-      <UButton
+      <!-- <UButton
         label="Sign in"
         color="gray"
         to="/login"
@@ -38,7 +50,18 @@ const links = [{
         color="black"
         to="/signup"
         class="hidden lg:flex"
-      />
+      /> -->
+      
+      <UTooltip text="Search" :shortcuts="['⌘', 'k']">
+        <UButton
+          :icon="appConfig.ui.icons.search"
+          v-bind="((!!label ? $ui?.button?.input : $ui?.button?.secondary) as any)"
+          aria-label="Search"
+          :class="[!!label && 'flex-1 border-0 ring-0']"
+          @click="toggleContentSearch"
+        ></UButton>
+      </UTooltip>
+      <UColorModeButton />
     </template>
 
     <template #panel>

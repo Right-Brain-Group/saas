@@ -24,13 +24,16 @@ const links = [{
 }, {
   label: 'Company',
   children: [{
-    label: 'About'
+    label: 'About',
+    to: '/about'
   }, {
-    label: 'Pricing'
+    label: 'Pricing',
+    to: '/pricing'
   }, {
     label: 'Careers'
   }, {
-    label: 'Blog'
+    label: 'Blog',
+    to: '/blog',
   }]
 }]
 
@@ -55,8 +58,8 @@ function onSubmit() {
 
 <template>
   <UFooter>
-    <template #top>
-      <UFooterColumns :links="links">
+    <!--<template #top>
+       <UFooterColumns :links="links">
         <template #right>
           <form @submit.prevent="onSubmit">
             <UFormGroup
@@ -87,8 +90,8 @@ function onSubmit() {
             </UFormGroup>
           </form>
         </template>
-      </UFooterColumns>
-    </template>
+      </UFooterColumns> 
+    </template>-->
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">

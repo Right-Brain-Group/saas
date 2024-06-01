@@ -1,10 +1,10 @@
-title: Right Brain Group - Web App & Brand Development
+title: About Right Brain Group
 description: Unlock the full potential of your online presence with Right Brain Group. Our expert team specializes in dynamic app and brand development, tailored for savvy businesses that DEMAND RESULTS. Elevate your digital footprint today.
 navigation: false
 hero:
-  title: Websites That,
+  title: Web Apps That,
   animated: Inspire...
-  description: Web & Brand development for smart businesses that DESIRE RESULTS.
+  description: Web & brand development for smart businesses that DESIRE RESULTS.
   headline:
     label: Made with S.C.I.E.N.C.E.
     to: /docs
@@ -45,8 +45,7 @@ sections:
         trailing: true
         size: md
         class: ml-8
-    lightsrc: /images/race.svg
-    darksrc: /images/race.svg
+    src: /images/race.svg
   - title: Our clients find that,
     description: After working with us, they...
     align: right
@@ -68,8 +67,7 @@ sections:
         trailing: true
         size: md
         class: ml-8
-    lightsrc: /images/winner.svg
-    darksrc: /images/winner.svg
+    src: /images/winner.svg
 features:
   title: Why choose our service?
   description: At Right Brain Group, we are dedicated to engineering exceptional web app and branding solutions, meticulously designed to catalyze your business' growth and success.

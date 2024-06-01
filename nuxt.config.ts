@@ -19,12 +19,17 @@ export default defineNuxtConfig({
       globals.forEach(c => c.global = true)
     }
   },
+  colorMode: {preference: 'dark'},
+  css: ['/assets/css/main.css'],
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
   routeRules: {
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
+  },
+  supabase: {
+    redirect: false
   },
   devtools: {
     enabled: true

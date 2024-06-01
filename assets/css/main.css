@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Prenton';
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/prenton3.woff') format('woff');
+}
+
+@layer base {
+    h1 {
+      @apply text-6xl font-prenton;
+    }
+    h2 {
+      @apply text-xl font-prenton;
+    }
+    h3 {
+        @apply text-xl font-prenton;
+      }
+    .animated-spin-rbg {
+      @apply animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#f69011_20deg,transparent_120deg)]
+     }
+    .button-wrap {
+    @apply relative z-10 flex w-full cursor-pointer items-center drop-shadow overflow-hidden rounded-full border-slate-200 dark:border-slate-800 p-[1.5px]
+    }
+  }

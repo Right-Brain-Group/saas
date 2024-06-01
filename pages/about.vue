@@ -7,7 +7,11 @@ if (!page.value) {
 useSeoMeta({
   titleTemplate: '',
   title: page.value.title,
+  animated: page.value.animated,
+  ogAnimated: page.value.animated,
   ogTitle: page.value.title,
+  src: page.value.src,
+  ogSrc: page.value.src,
   description: page.value.description,
   ogDescription: page.value.description
 })
@@ -66,19 +70,14 @@ useSeoMeta({
       :features="section.features"
     >
       <div class="flex justify-center">
-        <UColorModeImage class="w-full px-12" :light="section.lightsrc" :dark="section.darksrc" />
+        <NuxtImg :src="section.src" class="w-full px-12"/>
       </div>
     </ULandingSection>
 
     <ULandingSection
+      :title="page.features.title"
+      :description="page.features.description"
     >
-      <template #title>
-        <span v-html="page.features.title" />
-      </template>
-
-      <template #description>
-          <span v-html="page.features.description" />
-      </template>
       <UPageGrid>
         <ULandingCard
           v-for="(item, index) in page.features.items"
