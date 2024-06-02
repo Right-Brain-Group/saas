@@ -114,7 +114,7 @@ const beaker = ref('heroicons:beaker-solid')
 
     <template #right>
       
-      <div id="partners" class="w-full flex flex-row justify-center lg:justify-end">
+      <!-- <div id="partners" class="w-full flex flex-row justify-center lg:justify-end">
         <UTooltip text="Color Mode" :popper="{ offsetDistance: 5 }">
           <UColorModeButton size="sm" />
         </UTooltip>  
@@ -138,7 +138,7 @@ const beaker = ref('heroicons:beaker-solid')
             <Icon :name="github" size="22" />
           </ULink>
         </UTooltip>
-      </div>
+      </div> -->
     </template>
   </UFooter>
 </template>

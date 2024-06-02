@@ -10,18 +10,18 @@ hero:
     to: /
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
-    - label: Power Up
+    - label: Book Meeting Now
       to: https://calendar.app.google/PFyuyKtnQiTH1J4g9
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-    - label: Become a Member
-      icon: i-simple-icons-github
-      size: xl
-      color: gray
-      to: https://github.com/Right-Brain-Group-LLC
-      target: _blank
+    # - label: Become a Member
+    #   icon: i-simple-icons-github
+    #   size: xl
+    #   color: gray
+    #   to: https://github.com/Right-Brain-Group-LLC
+    #   target: _blank
 images:
   - lightsrc: /images/marketing_people_light.svg
     darksrc: /images/marketing_people_dark.svg

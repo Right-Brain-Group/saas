@@ -44,7 +44,7 @@ const appConfig = useAppConfig()
         to="/login"
       />-->
       <UButton
-        label="Contact Us"
+        label="Book Meeting Now"
         icon="i-heroicons-arrow-right-20-solid"
         trailing
         color="black"
