@@ -29,7 +29,7 @@ const appConfig = useAppConfig()
 <template>
   <UHeader>
     <template #logo>
-      <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto"/>
+      <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto" alt="Right Brain Group LLC" />
       <h2>Right Brain Group</h2> <UBadge
         label="SaaS"
         variant="subtle"
