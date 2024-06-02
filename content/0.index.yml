@@ -23,9 +23,8 @@ hero:
       to: https://github.com/Right-Brain-Group-LLC
       target: _blank
 images:
-  - srcs:
-    lgtsrc: /images/marketing_people_light.svg
-    drksrc: /images/marketing_people_dark.svg
+  - lightsrc: /images/marketing_people_light.svg
+    darksrc: /images/marketing_people_dark.svg
 sections:
   - title: We find our clients wanted to achieve their yearly goals,
     description: But there were hurdles...
@@ -74,74 +73,122 @@ sections:
         class: ml-8
     lightsrc: /images/winner-light.svg
     darksrc: /images/winner-dark.svg
+logos: 
+  - lightsrc: /images/drbrain-rbg-orange.svg
+    darksrc: /images/drbrain-rbg-orange.svg
 features:
-  title: Why choose our service?
-  description: At Right Brain Group, we are dedicated to engineering exceptional web app and branding solutions, meticulously designed to catalyze your business' growth and success.
-  items:
-    - title: User-Friendly Design
-      description: Our platforms are crafted with user experience in mind, ensuring they are intuitive and easy to navigate for all users, from beginners to tech-savvy professionals.
-      icon: i-heroicons-cog
-    - title: Dependable Performance
-      description: We guarantee reliable services with minimal downtime, ensuring consistent performance to keep your business operations smooth and efficient.
-      icon: i-heroicons-check
-    - title: Top-Notch Security
-      description: Security is our top priority. We implement advanced measures to protect your data and ensure privacy, giving you peace of mind.
-      icon: i-heroicons-lock-closed
-    - title: Lightning-Fast Solutions
-      description: Our solutions are optimized for speed, providing quick load times and efficient performance to enhance user satisfaction and engagement.
-      icon: i-heroicons-rocket-launch
-    - title: Cost-Effective Services
-      description: We offer competitive pricing without compromising on quality, ensuring that you get the best value for your investment.
-      icon: i-heroicons-currency-dollar
-    - title: Future-Proof Scalability
-      description: Our services are designed to grow with your business, easily accommodating increased traffic and expanding needs as your business evolves.
-      icon: i-heroicons-chart-bar
+    title: Why choose our service?
+    description: At Right Brain Group, we are dedicated to engineering exceptional web app and branding solutions, meticulously designed to catalyze your business' growth and success.
+    items:
+      - title: User-Friendly Design
+        description: Our platforms are crafted with user experience in mind, ensuring they are intuitive and easy to navigate for all users, from beginners to tech-savvy professionals.
+        icon: i-heroicons-cog
+      - title: Dependable Performance
+        description: We guarantee reliable services with minimal downtime, ensuring consistent performance to keep your business operations smooth and efficient.
+        icon: i-heroicons-check
+      - title: Top-Notch Security
+        description: Security is our top priority. We implement advanced measures to protect your data and ensure privacy, giving you peace of mind.
+        icon: i-heroicons-lock-closed
+      - title: Lightning-Fast Solutions
+        description: Our solutions are optimized for speed, providing quick load times and efficient performance to enhance user satisfaction and engagement.
+        icon: i-heroicons-rocket-launch
+      - title: Cost-Effective Services
+        description: We offer competitive pricing without compromising on quality, ensuring that you get the best value for your investment.
+        icon: i-heroicons-currency-dollar
+      - title: Future-Proof Scalability
+        description: Our services are designed to grow with your business, easily accommodating increased traffic and expanding needs as your business evolves.
+        icon: i-heroicons-chart-bar
 testimonials:
   headline: Testimonials
   title: What our customers are saying.
   description: Proident sunt exercitation minim laborum enim laboris labore esse.
   items:
-    - quote: Lee with RBG is amazingly gifted. He saw my vision for my site from day one, worked with me and made it come to fruition. I loved how Lee took the time to explain and even educate me on the details and specifics of my managing and creating my site, it made me feel more involved and more of my own creation. I love my finish product and I highly recommend RBG!
+    - quote: Right Brain saw my vision for my site from day one and made it come to fruition. I love my finish product & I highly recommend RBG!
       author:
         name: Amanda Yoa
-        description: CEO at Company
+        description: Simply Aligned LLC
+        link: https://g.co/kgs/a5xwVjP
         avatar:
-          src: https://g.co/kgs/a5xwVjP
+          src: /images/girl-01.svg
           loading: lazy
-    - quote: I can't even tell you how hard Lee at Right Brain Group has worked on our website. He goes above and beyond, is available any time, and to say he's conscientious is an understatement! We are so pleased with the results. It has been and continues to be a pleasure working with him. I recommend Right Brain Group for any type of website you are thinking of creating. Lee will get it done!
+    - quote: It has been a pleasure working with Right Brain. I recommend their team for any project. They will get it done!
       author:
         name: Jenn Sutton
-        description: CEO at Company
+        description: Townwide Tennis
+        link: https://g.co/kgs/JJhGU3B
         avatar:
-          src: https://g.co/kgs/JJhGU3B
+          src: /images/girl-01.svg
           loading: lazy
-    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
+    - quote: Lee and his associates have handled the artwork for several of my CD/album covers with exceptional creativity in a very timely fashion. I'm extremely happy and comfortable with his work and plan to hire him often moving into the future.
       author:
-        name: Cornelius Sheppard
-        description: CEO at Company
+        name: EMan
+        description: Singer / Songwriter
+        link: https://g.co/kgs/vCqtS6k
         avatar:
-          src: https://i.pravatar.cc/120?img=3
+          src: /images/guy-01.svg
           loading: lazy
-    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
+    - quote: Great Results. Gross sales doubled from 2016 to 2017, and continue to grow. A respected colleague is also now a RBG customer as well.
       author:
-        name: Destinee Woods
-        description: CEO at Company
+        name: Elizebeth Bayardi
+        description: Armand Bayardi Models
+        link: https://g.co/kgs/oc4PVjd
         avatar:
-          src: https://i.pravatar.cc/120?img=5
+          src: /images/girl-01.svg
           loading: lazy
-    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
+    - quote: RBG's work integrates research, sound business planning, quality code and cutting edge design aesthetics.
       author:
-        name: Kaleb Mccormick
-        description: CEO at Company
+        name: Kristin Kunhardt
+        description: Valley Spirit Wellness
+        link: 
         avatar:
-          src: https://i.pravatar.cc/120?img=8
+          src: /images/girl-01.svg
           loading: lazy
-    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
+    - quote: Lee and his team not only designed my company's logo (nailed it!!!) but has also helped several of my clients express their unique value proposition. Creative and insightful. They "get it".
       author:
-        name: Jazmin Mccall
-        description: CEO at Company
+        name: Ed Doherty
+        description: One Degree Coaching
+        link: 
         avatar:
-          src: https://i.pravatar.cc/120?img=9
+          src: /images/guy-01.svg
+          loading: lazy
+    - quote: Right Brain Group pushed the limits on our design. Our site looks awesome!
+      author:
+        name: Oleg Sokolov
+        description: RS Law Group
+        link: 
+        avatar:
+          src: /images/guy-01.svg
+          loading: lazy
+    - quote: Mind-blowing creativity combined with artistic ability took our ideas to a level that exceeded our expectations.
+      author:
+        name: Jeremy & Diana Kalen
+        description: Center For Healing & Transformation
+        link: 
+        avatar:
+          src: /images/girl-01.svg
+          loading: lazy
+    - quote: Right Brain Group brought our vision to life. If you are looking to rebrand, tapping the brain is the way to go.
+      author:
+        name: Joshua Hemmingway
+        description: Burger Barr
+        link: https://burgerbarr.com
+        avatar:
+          src: /images/guy-01.svg
+          loading: lazy
+    - quote: Dr. Brain has handled the artwork for several of my albums with exceptional creativity. I'm extremely happy with their work.
+      author:
+        name: Cecil Parker
+        description: Cecil Parker Music
+        avatar:
+          src: /images/guy-01.svg
+          loading: lazy
+    - quote: We love everything Right Brain has created for our brands. We love the end result.
+      author:
+        name: Donna Zadie
+        description: Philadelphia School of Massage & Bodywork
+        link: https://phillyschoolofmassage.com
+        avatar:
+          src: /images/girl-01.svg
           loading: lazy
 cta:
   title: Get started today

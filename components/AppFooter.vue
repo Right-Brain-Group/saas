@@ -54,6 +54,19 @@ function onSubmit() {
     loading.value = false
   }, 1000)
 }
+
+// ICONS
+import { Icon } from '#components'
+const nuxt = ref('logos:nuxt-icon')
+const tailwind = ref('logos:tailwindcss-icon')
+const supabase = ref('logos:supabase-icon')
+const github = ref('grommet-icons:github')
+const notion = ref('logos:notion-icon')
+const linkedin = ref('grommet-icons:linkedin')
+const x = ref('i-devicon-twitter')
+const facebook = ref('grommet-icons:facebook')
+const instagram = ref('grommet-icons:instagram')
+const beaker = ref('heroicons:beaker-solid')
 </script>
 
 <template>
@@ -100,16 +113,32 @@ function onSubmit() {
     </template>
 
     <template #right>
-      <UColorModeButton size="sm" />
-
-      <UButton
-        to="https://github.com/nuxt-ui-pro/saas"
-        target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="GitHub"
-        color="gray"
-        variant="ghost"
-      />
+      
+      <div id="partners" class="w-full flex flex-row justify-center lg:justify-end">
+        <UTooltip text="Color Mode" :popper="{ offsetDistance: 5 }">
+          <UColorModeButton size="sm" />
+        </UTooltip>  
+        <UTooltip text="NuxtJS" :popper="{ offsetDistance: 5 }">
+          <ULink to="https://nuxt.com" target="_blank" class="p-3" aria-label="Nuxt 3">
+            <Icon :name="nuxt" size="22" />
+          </ULink>
+        </UTooltip>
+        <UTooltip text="Notion" :popper="{ offsetDistance: 5 }">
+          <ULink to="https://www.notion.so/" target="_blank" class="p-3" aria-label="We Love Notion">
+            <Icon :name="notion" size="22" />
+          </ULink>
+        </UTooltip>
+        <UTooltip text="SupaBase" :popper="{ offsetDistance: 5 }">
+          <ULink to="https://supabase.com" target="_blank" class="p-3" aria-label="Supabase">
+            <Icon :name="supabase" size="22" />
+          </ULink>
+        </UTooltip>
+        <UTooltip text="Github" :popper="{ offsetDistance: 5 }">
+          <ULink to="https://github.com/Right-Brain-Group-LLC" target="_blank" class="p-3" aria-label="Github">
+            <Icon :name="github" size="22" />
+          </ULink>
+        </UTooltip>
+      </div>
     </template>
   </UFooter>
 </template>

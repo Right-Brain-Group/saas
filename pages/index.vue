@@ -58,24 +58,35 @@ useSeoMeta({
       v-for="(image, index) in page.images"
       :key="index"
       class="!pt-0">
-      <UColorModeImage class="w-full px-12" :light="image.lgtsrc" :dark="image.drksrc" />
+      <UColorModeImage class="w-full px-12" :light="image.lightsrc" :dark="image.darksrc" />
     </ULandingSection>
 
     <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
+      :img="section.img"
       :title="section.title"
       :description="section.description"
       :align="section.align"
       :features="section.features"
     >
       <div class="flex justify-center">
-        <UColorModeImage class="w-full" :light="section.lightsrc" :dark="section.darksrc" />
+        <UColorModeImage class="w-10/12" :light="section.lightsrc" :dark="section.darksrc" />
       </div>
     </ULandingSection>
 
     <ULandingSection
-    >
+      v-for="(logo, index) in page.logos"
+      :key="index"
+      class="!py-0 flex justify-center">
+
+        <UColorModeImage class="max-w-40" :light="logo.lightsrc" :dark="logo.darksrc" />
+  
+    </ULandingSection>
+
+    <ULandingSection
+      class="!py-0 flex justify-center">
+
       <template #title>
         <span v-html="page.features.title" />
       </template>
@@ -111,12 +122,12 @@ useSeoMeta({
       </UPageColumns>
     </ULandingSection>
 
-    <ULandingSection>
+    <!-- <ULandingSection>
       <ULandingCTA
         v-bind="page.cta"
         class="bg-gray-100/50 dark:bg-gray-800/50"
       />
-    </ULandingSection>
+    </ULandingSection> -->
   </div>
 </template>
 
