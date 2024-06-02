@@ -27,7 +27,7 @@
   
           <div v-if="links?.length || $slots.links" :class="ui.links">
             <slot name="links">
-              <UButton v-for="(link, index) in links" :key="index" v-bind="link" @click="link.click" />
+              <UButton v-for="(link, index) in links" :key="index" v-bind="link" @click="link.click" target="_blank"/>
             </slot>
           </div>
         </div>

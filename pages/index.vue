@@ -20,6 +20,7 @@ useSeoMeta({
       :animated="page.hero.animated"
       :description="page.hero.description"
       :links="page.hero.links"
+      class="sm:pt-24 sm:pb-12 md:pt-24 md:pb-14"
     >
       <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
 
@@ -53,8 +54,11 @@ useSeoMeta({
       </template>
     </AppLandingHero>
 
-    <ULandingSection class="!pt-0">
-      <NuxtImg src="/images/people.svg" />
+    <ULandingSection 
+      v-for="(image, index) in page.images"
+      :key="index"
+      class="!pt-0">
+      <UColorModeImage class="w-full px-12" :light="image.lgtsrc" :dark="image.drksrc" />
     </ULandingSection>
 
     <ULandingSection
@@ -66,7 +70,7 @@ useSeoMeta({
       :features="section.features"
     >
       <div class="flex justify-center">
-        <UColorModeImage class="w-full px-12" :light="section.lightsrc" :dark="section.darksrc" />
+        <UColorModeImage class="w-full" :light="section.lightsrc" :dark="section.darksrc" />
       </div>
     </ULandingSection>
 

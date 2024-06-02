@@ -7,7 +7,7 @@ hero:
   description: Web & Brand development for smart businesses that DESIRE RESULTS.
   headline:
     label: Made with S.C.I.E.N.C.E.
-    to: /docs
+    to: /
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Power Up
@@ -22,6 +22,10 @@ hero:
       color: gray
       to: https://github.com/Right-Brain-Group-LLC
       target: _blank
+images:
+  - srcs:
+    lgtsrc: /images/marketing_people_light.svg
+    drksrc: /images/marketing_people_dark.svg
 sections:
   - title: We find our clients wanted to achieve their yearly goals,
     description: But there were hurdles...
@@ -45,8 +49,8 @@ sections:
         trailing: true
         size: md
         class: ml-8
-    lightsrc: /images/race.svg
-    darksrc: /images/race.svg
+    lightsrc: /images/race-light.svg
+    darksrc: /images/race-dark.svg
   - title: Our clients find that,
     description: After working with us, they...
     align: right
@@ -68,8 +72,8 @@ sections:
         trailing: true
         size: md
         class: ml-8
-    lightsrc: /images/winner.svg
-    darksrc: /images/winner.svg
+    lightsrc: /images/winner-light.svg
+    darksrc: /images/winner-dark.svg
 features:
   title: Why choose our service?
   description: At Right Brain Group, we are dedicated to engineering exceptional web app and branding solutions, meticulously designed to catalyze your business' growth and success.
@@ -97,19 +101,19 @@ testimonials:
   title: What our customers are saying.
   description: Proident sunt exercitation minim laborum enim laboris labore esse.
   items:
-    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
+    - quote: Lee with RBG is amazingly gifted. He saw my vision for my site from day one, worked with me and made it come to fruition. I loved how Lee took the time to explain and even educate me on the details and specifics of my managing and creating my site, it made me feel more involved and more of my own creation. I love my finish product and I highly recommend RBG!
       author:
-        name: Rose Roberson
+        name: Amanda Yoa
         description: CEO at Company
         avatar:
-          src: https://i.pravatar.cc/120?img=1
+          src: https://g.co/kgs/a5xwVjP
           loading: lazy
-    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
+    - quote: I can't even tell you how hard Lee at Right Brain Group has worked on our website. He goes above and beyond, is available any time, and to say he's conscientious is an understatement! We are so pleased with the results. It has been and continues to be a pleasure working with him. I recommend Right Brain Group for any type of website you are thinking of creating. Lee will get it done!
       author:
-        name: Chace Rodgers
+        name: Jenn Sutton
         description: CEO at Company
         avatar:
-          src: https://i.pravatar.cc/120?img=7
+          src: https://g.co/kgs/JJhGU3B
           loading: lazy
     - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
       author:

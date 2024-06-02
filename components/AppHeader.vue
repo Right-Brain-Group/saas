@@ -10,8 +10,8 @@ const links = [{
 //   label: 'Blog',
 //   to: '/blog'
 // }, {
-  label: 'Contact',
-  to: 'https://calendar.app.google/PFyuyKtnQiTH1J4g9'
+//  label: 'Contact',
+//  to: 'https://calendar.app.google/PFyuyKtnQiTH1J4g9'
 }]
 
 const appConfig = useAppConfig()
@@ -27,7 +27,7 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-  <UHeader :links="links">
+  <UHeader>
     <template #logo>
       <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto"/>
       <h2>Right Brain Group</h2> <UBadge
@@ -42,15 +42,16 @@ const appConfig = useAppConfig()
         label="Sign in"
         color="gray"
         to="/login"
-      />
+      />-->
       <UButton
-        label="Sign up"
+        label="Contact Us"
         icon="i-heroicons-arrow-right-20-solid"
         trailing
         color="black"
-        to="/signup"
+        target="_blank"
+        to="https://calendar.app.google/PFyuyKtnQiTH1J4g9"
         class="hidden lg:flex"
-      /> -->
+      />
       
       <!-- <UTooltip text="Search" :shortcuts="['⌘', 'k']">
         <UButton
@@ -64,11 +65,11 @@ const appConfig = useAppConfig()
       <UColorModeButton />
     </template>
 
-    <template #panel>
+    <!-- <template #panel>
       <UNavigationTree
         :links="mapContentNavigation(navigation)"
         default-open
       />
-    </template>
+    </template> -->
   </UHeader>
 </template>
