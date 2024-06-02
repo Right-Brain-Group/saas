@@ -4,12 +4,12 @@ export default defineAppConfig({
     gray: 'slate',
     variables: {
       light: {
-        background: '#fafafa',
+        background: '#fafaf9',
         foreground: 'var(--color-gray-900)'
       },
       dark: {
         background: 'var(--color-gray-900)',
-        foreground: '#fafafa'
+        foreground: '#fafaf9'
       },
       header: {
         height: '4rem'

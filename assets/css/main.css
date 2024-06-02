@@ -23,6 +23,6 @@
       @apply animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#f69011_20deg,transparent_120deg)]
      }
     .button-wrap {
-    @apply relative z-10 flex w-full cursor-pointer items-center drop-shadow overflow-hidden rounded-full border-slate-200 dark:border-slate-800 p-[1.5px]
+      @apply relative z-10 flex w-full cursor-pointer items-center drop-shadow overflow-hidden rounded-full border-slate-200 dark:border-slate-800 p-[1.5px]
     }
   }

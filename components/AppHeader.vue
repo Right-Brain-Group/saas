@@ -33,7 +33,7 @@ const appConfig = useAppConfig()
       <h2>Right Brain Group</h2> <UBadge
         label="SaaS"
         variant="subtle"
-        class="mb-0.5"
+        class="mb-0.5 hidden sm:block"
       />
     </template>
 

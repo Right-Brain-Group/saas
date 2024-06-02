@@ -99,7 +99,7 @@
       base,
       headline: 'mb-10',
       title: 'text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl',
-      animated: 'animate-text text-5xl sm:text-7xl font-bold bg-gradient-to-r from-orange-500 via-fusion-400 to-fusion-600 bg-clip-text text-transparent',
+      animated: 'animate-text text-5xl sm:text-7xl font-bold bg-gradient-to-r from-fusion-500 via-fusion-500 to-orange-500 bg-clip-text text-transparent',
       description: 'mt-6 text-lg tracking-tight text-gray-600 dark:text-gray-300',
       links
     }

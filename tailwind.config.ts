@@ -9,24 +9,11 @@ export default <Partial<Config>>{
         body: ['Open Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: '#f69011',
+        primary: '#f9b712',
         secondary: '#f25f4c',
         tertiary: '#e53170',
         dark: '#7b3d13',
-        light: '#fafafa',
-        fusion: {
-          '50': '#fffaed',
-          '100': '#fef3d6',
-          '200': '#fde3ab',
-          '300': '#fbcd76',
-          '400': '#f9ad3e',
-          '500': '#f69011',
-          '600': '#e7780f',
-          '700': '#c05c0e',
-          '800': '#984814',
-          '900': '#7b3d13',
-          '950': '#421c08',
-          },
+        light: '#fafaf9',
       },
       keyframes: {
         rotate: {
