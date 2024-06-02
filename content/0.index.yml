@@ -1,5 +1,5 @@
-title: Right Brain Group - Web App & Brand Development
-description: Unlock the full potential of your online presence with Right Brain Group. Our expert team specializes in dynamic app and brand development, tailored for savvy businesses that DEMAND RESULTS. Elevate your digital footprint today.
+title: Right Brain Group - Website & Brand Development
+description: Unlock the full potential of your online presence with Right Brain Group. Our expert team specializes in dynamic websites and brand development, tailored for savvy businesses that DEMAND RESULTS. Elevate your digital footprint today.
 navigation: false
 hero:
   title: Websites That,
@@ -77,7 +77,7 @@ logos:
   - lightsrc: /images/drbrain-rbg-orange.svg
     darksrc: /images/drbrain-rbg-orange.svg
 features:
-    title: Why choose our service?
+    title: Step into the L.A.B.
     description: At Right Brain Group, we are dedicated to engineering exceptional web app and branding solutions, meticulously designed to catalyze your business' growth and success.
     items:
       - title: User-Friendly Design
@@ -188,7 +188,8 @@ testimonials:
         description: Philadelphia School of Massage & Bodywork
         link: https://phillyschoolofmassage.com
         avatar:
-          src: /images/girl-01.svg
+          lightsrc: /images/girl-01.svg
+          darksrc: /images/guy-01.svg
           loading: lazy
 cta:
   title: Get started today

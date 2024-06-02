@@ -2,6 +2,19 @@ export default defineAppConfig({
   ui: {
     primary: 'fusion',
     gray: 'slate',
+    variables: {
+      light: {
+        background: '#fafafa',
+        foreground: 'var(--color-gray-900)'
+      },
+      dark: {
+        background: 'var(--color-gray-900)',
+        foreground: '#fafafa'
+      },
+      header: {
+        height: '4rem'
+      }
+    },
     button: {
       rounded: 'rounded-full',
       default: {

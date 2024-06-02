@@ -58,7 +58,7 @@ useSeoMeta({
       v-for="(image, index) in page.images"
       :key="index"
       class="!pt-0">
-      <UColorModeImage class="w-full px-12" :light="image.lightsrc" :dark="image.darksrc" />
+      <UColorModeImage class="w-full md:w-10/12 px-12 self-center flex" :light="image.lightsrc" :dark="image.darksrc" />
     </ULandingSection>
 
     <ULandingSection
@@ -71,7 +71,7 @@ useSeoMeta({
       :features="section.features"
     >
       <div class="flex justify-center">
-        <UColorModeImage class="w-10/12" :light="section.lightsrc" :dark="section.darksrc" />
+        <UColorModeImage class="w-9/12" :light="section.lightsrc" :dark="section.darksrc" />
       </div>
     </ULandingSection>
 
@@ -80,7 +80,7 @@ useSeoMeta({
       :key="index"
       class="!py-0 flex justify-center">
 
-        <UColorModeImage class="max-w-40" :light="logo.lightsrc" :dark="logo.darksrc" />
+        <UColorModeImage class="w-64" :light="logo.lightsrc" :dark="logo.darksrc" />
   
     </ULandingSection>
 
@@ -107,6 +107,7 @@ useSeoMeta({
       :headline="page.testimonials.headline"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
+      :avatar="page.testimonials.lightsrc"
     >
       <UPageColumns class="xl:columns-4">
         <div

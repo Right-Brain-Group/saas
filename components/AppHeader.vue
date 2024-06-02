@@ -62,7 +62,7 @@ const appConfig = useAppConfig()
           @click="toggleContentSearch"
         ></UButton>
       </UTooltip> -->
-      <UColorModeButton />
+      <UColorModeSelect class="w-28" />
     </template>
 
     <!-- <template #panel>

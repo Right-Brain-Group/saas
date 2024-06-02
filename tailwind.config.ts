@@ -13,7 +13,7 @@ export default <Partial<Config>>{
         secondary: '#f25f4c',
         tertiary: '#e53170',
         dark: '#7b3d13',
-        light: '#fffaed',
+        light: '#fafafa',
         fusion: {
           '50': '#fffaed',
           '100': '#fef3d6',
