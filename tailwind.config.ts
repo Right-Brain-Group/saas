@@ -14,6 +14,18 @@ export default <Partial<Config>>{
         tertiary: '#e53170',
         dark: '#7b3d13',
         light: '#fafaf9',
+        fusion: {
+          '50': '#f8f9d1',
+          '100': '#fdffba',
+          '200': '#ffff84',
+          '300': '#fff555',
+          '400': '#ffdf2e',
+          '500': '#f9b712',
+          '600': '#db7704',
+          '700': '#b13a02',
+          '800': '#7e0d05',
+          '900': '#460614'
+          },
       },
       keyframes: {
         rotate: {
