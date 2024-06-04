@@ -15,6 +15,11 @@ export default defineAppConfig({
         height: '4rem'
       }
     },
+    badge: {
+      variant: {
+        subtle: 'slate-300'
+      },
+    },
     button: {
       rounded: 'rounded-full',
       default: {

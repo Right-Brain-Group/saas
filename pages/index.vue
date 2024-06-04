@@ -29,7 +29,7 @@ useSeoMeta({
           v-if="page.hero.headline"
           variant="subtle"
           size="lg"
-          class="relative rounded-full font-semibold"
+          class="relative rounded-full font-semibold bg-slate-50 dark:bg-slate-50 light:bg-slate-50"
         >
           <NuxtLink
             :to="page.hero.headline.to"

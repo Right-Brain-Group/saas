@@ -14,16 +14,16 @@ const links = [{
 //  to: 'https://calendar.app.google/PFyuyKtnQiTH1J4g9'
 }]
 
-const appConfig = useAppConfig()
-  const { toggleContentSearch } = useUIState()
-  const { metaSymbol } = useShortcuts()
+// const appConfig = useAppConfig()
+//   const { toggleContentSearch } = useUIState()
+//   const { metaSymbol } = useShortcuts()
   
-  defineProps({
-    label: {
-      type: String,
-      default: 'Search...'
-    }
-  })
+//   defineProps({
+//     label: {
+//       type: String,
+//       default: 'Search...'
+//     }
+//   })
 </script>
 
 <template>
@@ -33,7 +33,7 @@ const appConfig = useAppConfig()
       <h2>Right Brain Group</h2> <UBadge
         label="SaaS"
         variant="subtle"
-        class="mb-0.5 hidden sm:block"
+        class="mb-0.5 hidden sm:block bg-slate-50 dark:bg-slate-50 light:bg-slate-50"
       />
     </template>
 
