@@ -20,7 +20,8 @@ export default defineAppConfig({
     },
     badge: {
       variant: {
-        subtle: 'slate-300'
+        subtle: '#fafaf9',
+        background: '#fafaf9',
       },
     },
     button: {

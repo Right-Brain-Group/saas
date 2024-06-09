@@ -11,18 +11,18 @@ hero:
     to: /work
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
-    - label: Book Meeting Now
-      to: https://calendar.app.google/PFyuyKtnQiTH1J4g9
-      size: xl
-      class: bg-primary
-      icon: i-heroicons-calendar-days
-      target: _blank
     - label: View Our Work
       to: /work
       size: xl
-      class: bg-sky-400
+      class: lgt-neo dark:drk-neo bg-light dark:bg-dark text-dark dark:text-light hover:bg-neutral-100 hover:dark:bg-slate-800
       icon: i-heroicons-beaker-solid
       target: _self
+    - label: Book Meeting Now
+      to: https://calendar.app.google/PFyuyKtnQiTH1J4g9
+      size: xl
+      class: bg-sky-400 hover:bg-sky-300 hover:dark:bg-sky-600      
+      icon: i-heroicons-calendar-days
+      target: _blank
 images:
   - lightsrc: /images/marketing_people_light.svg
     darksrc: /images/marketing_people_dark.svg

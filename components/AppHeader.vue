@@ -45,7 +45,7 @@ label: 'Process',
         icon="i-heroicons-calendar-days"
         target="_blank"
         to="https://calendar.app.google/PFyuyKtnQiTH1J4g9"
-        class="hidden lg:flex bg-primary"
+        class="hidden lg:flex bg-sky-400 hover:bg-sky-300 hover:dark:bg-sky-600 "
       />
       
       <!-- <UTooltip text="Search" :shortcuts="['⌘', 'k']">
