@@ -19,9 +19,8 @@ export default defineAppConfig({
       }
     },
     badge: {
-      background: '#fafaf9',
       variant: {
-        subtle: '#fafaf9',
+        subtle: 'rounded-full bg-neutral lgt-neo dark:drk-neo dark:bg-sky-400 dark:bg-opacity-10 text-sky-500 dark:text-sky-400 ring-1 ring-inset ring-sky-500 dark:ring-{color}-400 ring-opacity-25 dark:ring-opacity-25',
       },
     },
     button: {
