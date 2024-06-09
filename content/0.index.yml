@@ -102,7 +102,8 @@ features:
 testimonials:
   headline: Testimonials
   title: What our customers are saying.
-  description: Proident sunt exercitation minim laborum enim laboris labore esse.
+  description: Discover the experiences of our satisfied customers who have enjoyed our gourmet burgers and exceptional service. Their feedback is a testament to our commitment to quality and customer satisfaction.
+
   items:
     - quote: Right Brain saw my vision for my site from day one and made it come to fruition. I love my finish product & I highly recommend RBG!
       author:
