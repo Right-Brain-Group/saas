@@ -2,6 +2,9 @@ export default defineAppConfig({
   ui: {
     primary: 'fusion',
     gray: 'slate',
+    color: {
+      tertiary: '#db7704',
+      },
     variables: {
       light: {
         background: '#fafaf9',
@@ -32,10 +35,10 @@ export default defineAppConfig({
       }
     },
     card: {
-      background: 'bg-gradient-to-b dark:from-slate-800 dark:to-slate-900 from-slate-50 to-slate-100 ring-1 ring-slate-100 dark:ring-slate-800',
-      ring: 'ring-1 ring-slate-100 dark:ring-slate-800',
+      background: 'lgt-neo dark:drk-neo ring-0',
+      ring: 'ring-0',
       rounded: 'rounded-xl',
-      shadow: 'shadow-sm',
+      shadow: 'shadow-none',
     },
     footer: {
       top: {

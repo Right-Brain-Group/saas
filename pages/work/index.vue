@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { BlogPost } from '~/types'
 
-const { data: page } = await useAsyncData('services', () => queryContent('/services').findOne())
+const { data: page } = await useAsyncData('work', () => queryContent('/work').findOne())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>('/services')
+const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>('/work')
   .where({ _extension: 'md' })
   .sort({ date: -1 })
   .find())
@@ -41,8 +41,6 @@ defineOgImage({
           :title="post.title"
           :description="post.description"
           :image="post.image"
-          :date="new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' })"
-          :authors="post.authors"
           :badge="post.badge"
           :orientation="index === 0 ? 'horizontal' : 'vertical'"
           :class="[index === 0 && 'col-span-full']"

@@ -100,6 +100,8 @@ useSeoMeta({
           v-for="(item, index) in page.features.items"
           :key="index"
           v-bind="item"
+          color="primary"
+          class="HELLO"
         />
       </UPageGrid>
     </ULandingSection>

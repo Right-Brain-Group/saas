@@ -7,21 +7,21 @@ hero:
   description: Web & Brand development for smart businesses that Desire Results.
   headline:
     label: Made with S.C.I.E.N.C.E.
-    to: /
+    to: /work
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Book Meeting Now
       to: https://calendar.app.google/PFyuyKtnQiTH1J4g9
       size: xl
-      color: black
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
-    # - label: Become a Member
-    #   icon: i-simple-icons-github
-    #   size: xl
-    #   color: gray
-    #   to: https://github.com/Right-Brain-Group-LLC
-    #   target: _blank
+      class: bg-primary
+      icon: i-heroicons-calendar-days
+      target: _blank
+    - label: View Our Work
+      to: /work
+      size: xl
+      class: bg-sky-400
+      icon: i-heroicons-beaker-solid
+      target: _self
 images:
   - lightsrc: /images/marketing_people_light.svg
     darksrc: /images/marketing_people_dark.svg

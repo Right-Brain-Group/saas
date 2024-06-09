@@ -4,15 +4,16 @@ import type { NavItem } from '@nuxt/content/dist/runtime/types'
 const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
 
 const links = [{
-//   label: 'Process',
-//   to: '/docs'
-// }, {
+label: 'Process',
+ to: '/docs'
+}, //{
 //   label: 'Blog',
 //   to: '/blog'
 // }, {
 //  label: 'Contact',
 //  to: 'https://calendar.app.google/PFyuyKtnQiTH1J4g9'
-}]
+//}
+]
 
 // const appConfig = useAppConfig()
 //   const { toggleContentSearch } = useUIState()
@@ -45,12 +46,10 @@ const links = [{
       />-->
       <UButton
         label="Book Meeting Now"
-        icon="i-heroicons-arrow-right-20-solid"
-        trailing
-        color="black"
+        icon="i-heroicons-calendar-days"
         target="_blank"
         to="https://calendar.app.google/PFyuyKtnQiTH1J4g9"
-        class="hidden lg:flex"
+        class="hidden lg:flex bg-primary"
       />
       
       <!-- <UTooltip text="Search" :shortcuts="['⌘', 'k']">
@@ -62,7 +61,7 @@ const links = [{
           @click="toggleContentSearch"
         ></UButton>
       </UTooltip> -->
-      <UColorModeSelect class="w-28" />
+      <!-- <UColorModeToggle /> -->
     </template>
 
     <!-- <template #panel>

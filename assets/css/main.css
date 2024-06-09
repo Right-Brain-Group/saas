@@ -25,4 +25,14 @@
     .button-wrap {
       @apply relative z-10 flex w-full cursor-pointer items-center drop-shadow overflow-hidden rounded-full border-slate-200 dark:border-slate-800 p-[1.5px]
     }
+    .lgt-neo{
+      box-shadow: 
+        3px 3px 8px #ebebea,
+        -3px -3px 8px #ffffff !important;
+    }
+    .drk-neo{
+      box-shadow: 
+        6px 6px 12px #090e1a,
+        -6px -6px 12px #15203a !important;
+    }
   }
