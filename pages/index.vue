@@ -29,9 +29,7 @@ useSeoMeta({
         <div class="flex justify-center">
         <NuxtImg
             :src="page.hero.image.src"
-            class="pointer-events-none -mt-20 mb-8"
-            width="450"
-            height="450"
+            class="pointer-events-none -mt-20 mb-8 max-w-xs md:w-full md:max-w-sm"
           />
         </div>
       </template>
