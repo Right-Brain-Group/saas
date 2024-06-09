@@ -16,7 +16,7 @@ useSeoMeta({
 <template>
   <div v-if="page">
     <AppLandingHero
-      :image="page.hero.images"
+      :image="page.hero.image"
       :title="page.hero.title"
       :animated="page.hero.animated"
       :description="page.hero.description"
@@ -28,7 +28,7 @@ useSeoMeta({
       <template #top>
         <div class="flex justify-center">
         <NuxtImg
-            src="/images/drbrain-rbg-orange.svg"
+            :src="page.hero.image.src"
             class="pointer-events-none -mt-10 mb-5"
             width="200"
             height="200"

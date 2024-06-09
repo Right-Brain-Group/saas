@@ -6,7 +6,7 @@ hero:
   class: hello
   animated: Inspire...
   description: Web & Brand development for smart businesses that Desire Results.
-  images:
+  image:
     src: /images/drbrain-rbg-orange.svg
   headline:
     label: Made with S.C.I.E.N.C.E.
