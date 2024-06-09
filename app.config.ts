@@ -19,13 +19,14 @@ export default defineAppConfig({
       }
     },
     badge: {
+      background: '#fafaf9',
       variant: {
         subtle: '#fafaf9',
-        background: '#fafaf9',
       },
     },
     button: {
       rounded: 'rounded-full',
+      shadow: 'lgt-neo dark:drk-neo',
       default: {
         size: 'md'
       }

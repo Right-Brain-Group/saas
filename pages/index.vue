@@ -55,13 +55,6 @@ useSeoMeta({
       </template>
     </AppLandingHero>
 
-    <ULandingSection 
-      v-for="(image, index) in page.images"
-      :key="index"
-      class="!pt-0">
-      <UColorModeImage class="w-full md:w-10/12 px-12 self-center flex" :light="image.lightsrc" :dark="image.darksrc" alt="Website People"  />
-    </ULandingSection>
-
     <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
@@ -76,13 +69,11 @@ useSeoMeta({
       </div>
     </ULandingSection>
 
-    <ULandingSection
-      v-for="(logo, index) in page.logos"
+    <ULandingSection 
+      v-for="(image, index) in page.images"
       :key="index"
-      class="!py-0 flex justify-center">
-
-        <UColorModeImage class="w-64" :light="logo.lightsrc" :dark="logo.darksrc" alt="Dr. Brain - Right Brain Group"  />
-  
+      class="!py-0 mb-8">
+      <UColorModeImage class="w-full md:w-10/12 px-12 self-center flex" :light="image.lightsrc" :dark="image.darksrc" alt="Right Brain Group Website Services"  />
     </ULandingSection>
 
     <ULandingSection
