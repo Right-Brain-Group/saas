@@ -21,7 +21,7 @@ useSeoMeta({
       :animated="page.hero.animated"
       :description="page.hero.description"
       :links="page.hero.links"
-      class="sm:pt-24 sm:pb-12 md:pt-36 md:pb-14 h-svh"
+      class="sm:pt-24 sm:pb-12 md:pt-36 md:pb-14"
     >
       <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,#fafaf9,transparent)]" />
       
@@ -30,8 +30,8 @@ useSeoMeta({
         <NuxtImg
             :src="page.hero.image.src"
             class="pointer-events-none -mt-20 mb-8"
-            width="240"
-            height="240"
+            width="450"
+            height="450"
           />
         </div>
       </template>
