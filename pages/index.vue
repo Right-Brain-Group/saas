@@ -23,15 +23,15 @@ useSeoMeta({
       :links="page.hero.links"
       class="sm:pt-24 sm:pb-12 md:pt-36 md:pb-14 h-svh"
     >
-      <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
+      <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,#fafaf9,transparent)]" />
       
       <template #top>
         <div class="flex justify-center">
         <NuxtImg
             :src="page.hero.image.src"
-            class="pointer-events-none -mt-10 mb-5"
-            width="200"
-            height="200"
+            class="pointer-events-none -mt-20 mb-8"
+            width="240"
+            height="240"
           />
         </div>
       </template>
