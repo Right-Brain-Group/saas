@@ -16,21 +16,35 @@ useSeoMeta({
 <template>
   <div v-if="page">
     <AppLandingHero
+      :image="page.hero.images"
       :title="page.hero.title"
       :animated="page.hero.animated"
       :description="page.hero.description"
       :links="page.hero.links"
-      class="sm:pt-24 sm:pb-12 md:pt-36 md:pb-14"
+      class="sm:pt-24 sm:pb-12 md:pt-36 md:pb-14 h-svh"
     >
       <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
-
+      
+      <template #top>
+        <div class="flex justify-center">
+        <NuxtImg
+            src="/images/drbrain-rbg-orange.svg"
+            class="pointer-events-none -mt-10 mb-5"
+            width="200"
+            height="200"
+          />
+        </div>
+      </template>
+      
       <template #headline>
+
         <UBadge
           v-if="page.hero.headline"
           variant="subtle"
           size="lg"
           class="relative rounded-full font-semibold bg-slate-50 dark:bg-slate-50 light:bg-slate-50"
         >
+
           <NuxtLink
             :to="page.hero.headline.to"
             target="_blank"
