@@ -139,6 +139,33 @@ const beaker = ref('heroicons:beaker-solid')
           </ULink>
         </UTooltip>
       </div> -->
+      <ul class="flex divide-x divide-slate-300 dark:divide-slate-600">
+          <li>
+            <ULink to="https://facebook.com/Right-Brain-Group-LLC" target="_blank" aria-label="Facebook"
+              class="px-3 hover:text-primary hover:transition-all">
+              <Icon :name="facebook" size="14" />
+            </ULink>
+          </li>
+          <li>
+            <ULink to="https://linkedin.com/in/Right-Brain-Group-LLC" target="_blank" aria-label="LinkedIn"
+              class="px-3 hover:text-primary hover:transition-all">
+              <Icon :name="linkedin" size="14" class="hover:text-primary hover:transition-all" />
+            </ULink>
+          </li>
+          <li>
+            <ULink to="https://instagram.com/Right-Brain-Group-LLC" target="_blank" aria-label="Instagram"
+              class="px-3 hover:text-primary hover:transition-all">
+              <Icon :name="instagram" size="14" class="hover:fill-primary hover:transition-all" />
+            </ULink>
+          </li>
+          <li>
+            <ULink to="https://twitter.com/Right-Brain-Group-LLC" target="_blank" aria-label="X"
+              class="px-3 hover:text-primary hover:transition-all">
+              <Icon :name="x" size="14" class="dark:fill-slate-300 fill-slate-700 hover:fill-primary hover:transition-all" />
+            </ULink>
+          </li>
+
+        </ul>
     </template>
   </UFooter>
 </template>

@@ -31,11 +31,7 @@ label: 'Process',
   <UHeader>
     <template #logo>
       <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto" alt="Right Brain Group LLC" />
-      <h2>Right Brain Group</h2> <UBadge
-        label="SaaS"
-        variant="subtle"
-        class="mb-0.5 hidden sm:block bg-slate-50 dark:bg-slate-50 light:bg-slate-50"
-      />
+      <h2>Right Brain Group</h2>
     </template>
 
     <template #right>

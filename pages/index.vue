@@ -20,7 +20,7 @@ useSeoMeta({
       :animated="page.hero.animated"
       :description="page.hero.description"
       :links="page.hero.links"
-      class="sm:pt-24 sm:pb-12 md:pt-24 md:pb-14"
+      class="sm:pt-24 sm:pb-12 md:pt-36 md:pb-14"
     >
       <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
 
@@ -96,12 +96,10 @@ useSeoMeta({
           <span v-html="page.features.description" />
       </template>
       <UPageGrid>
-        <ULandingCard
+        <UPageCard
           v-for="(item, index) in page.features.items"
           :key="index"
           v-bind="item"
-          color="primary"
-          class="HELLO"
         />
       </UPageGrid>
     </ULandingSection>
@@ -120,7 +118,7 @@ useSeoMeta({
         >
           <ULandingTestimonial
             v-bind="testimonial"
-            class="bg-gray-100/50 dark:bg-gray-800/50"
+            to="link"
           />
         </div>
       </UPageColumns>

@@ -3,6 +3,7 @@ description: Unlock the full potential of your online presence with Right Brain 
 navigation: false
 hero:
   title: Websites That,
+  class: hello
   animated: Inspire...
   description: Web & Brand development for smart businesses that Desire Results.
   headline:
@@ -181,15 +182,6 @@ testimonials:
         description: Cecil Parker Music
         avatar:
           src: /images/guy-01.svg
-          loading: lazy
-    - quote: We love everything Right Brain has created for our brands. We love the end result.
-      author:
-        name: Donna Zadie
-        description: Philadelphia School of Massage & Bodywork
-        link: https://phillyschoolofmassage.com
-        avatar:
-          lightsrc: /images/girl-01.svg
-          darksrc: /images/guy-01.svg
           loading: lazy
 cta:
   title: Get started today

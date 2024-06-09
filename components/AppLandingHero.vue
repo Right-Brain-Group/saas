@@ -4,11 +4,11 @@
   
       <UContainer :class="ui.container">
         <div :class="ui.base">
-          <div v-if="$slots.headline" :class="ui.headline">
+          <!-- <div v-if="$slots.headline" :class="ui.headline">
             <slot name="headline" />
-          </div>
+          </div> -->
         <h1>
-            <span :class="ui.title" style="padding-right: 10px;">
+            <span :class="ui.title" style="padding-right: 13px;">
                 <slot name="title">
                 {{ title }}
                 </slot>
