@@ -29,7 +29,8 @@ useSeoMeta({
         <div class="flex justify-center">
         <NuxtImg
             :src="page.hero.image.src"
-            class="pointer-events-none -mt-20 mb-8 w-auto max-w-xs md:w-full md:max-w-sm"
+            class="pointer-events-none -mt-20 mb-8 max-w-xs w-full md:max-w-sm xl:max-w-md"
+            alt="Right Brain Group Website - Dr. Brain"
           />
         </div>
       </template>
