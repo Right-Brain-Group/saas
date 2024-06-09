@@ -81,13 +81,6 @@ useSeoMeta({
       </div>
     </ULandingSection>
 
-    <ULandingSection 
-      v-for="(image, index) in page.images"
-      :key="index"
-      class="!py-0 mb-8">
-      <UColorModeImage class="w-full md:w-10/12 px-12 self-center flex" :light="image.lightsrc" :dark="image.darksrc" alt="Right Brain Group Website Services"  />
-    </ULandingSection>
-
     <ULandingSection
       class="!py-0 flex justify-center">
 
@@ -107,8 +100,14 @@ useSeoMeta({
       </UPageGrid>
     </ULandingSection>
 
+    <ULandingSection 
+      v-for="(image, index) in page.images"
+      :key="index"
+      class="!py-0 mb-8">
+      <UColorModeImage class="w-full md:w-10/12 px-12 self-center flex" :light="image.lightsrc" :dark="image.darksrc" alt="Right Brain Group Website Services"  />
+    </ULandingSection>
+
     <ULandingSection
-      :headline="page.testimonials.headline"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
       :avatar="page.testimonials.lightsrc"
