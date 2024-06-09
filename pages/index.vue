@@ -26,10 +26,10 @@ useSeoMeta({
       <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,#fafaf9,transparent)]" />
       
       <template #top>
-        <div class="flex justify-center">
+        <div class="flex justify-center -mt-10">
         <NuxtImg
             :src="page.hero.image.src"
-            class="pointer-events-none -mt-20 mb-8 max-w-xs w-full md:max-w-sm xl:max-w-md"
+            class="pointer-events-none -mt-20 mb-8 max-w-xs w-full sm:max-w-xs lg:max-w-sm 2xl:max-w-md"
             alt="Right Brain Group Website - Dr. Brain"
           />
         </div>
@@ -76,6 +76,7 @@ useSeoMeta({
       :description="section.description"
       :align="section.align"
       :features="section.features"
+      class="!py-0 pb-0 gap-5 my-28"
     >
       <div class="flex justify-center">
         <UColorModeImage class="w-9/12" :light="section.lightsrc" :dark="section.darksrc"  alt="Website & Branding People" />
@@ -83,7 +84,7 @@ useSeoMeta({
     </ULandingSection>
 
     <ULandingSection
-      class="!py-0 flex justify-center">
+      class="!py-0">
 
       <template #title>
         <span v-html="page.features.title" />
@@ -92,7 +93,8 @@ useSeoMeta({
       <template #description>
           <span v-html="page.features.description" />
       </template>
-      <UPageGrid>
+      <UPageGrid
+      class="-mt-10">
         <UPageCard
           v-for="(item, index) in page.features.items"
           :key="index"
@@ -114,7 +116,7 @@ useSeoMeta({
       :description="page.testimonials.description"
       :avatar="page.testimonials.lightsrc"
     >
-      <UPageColumns class="xl:columns-4">
+      <UPageColumns class="xl:columns-4 -mt-10">
         <div
           v-for="(testimonial, index) in page.testimonials.items"
           :key="index"
