@@ -26,7 +26,7 @@ export default defineNuxtConfig({
           src: 'https://plausible.io/js/script.js',
           defer: true,
           type: 'text/partytown',
-          'data-domain': 'rightbraingroup',
+          'data-domain': 'rightbraingroup.com',
         },
       ],
     },
