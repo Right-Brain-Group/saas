@@ -19,8 +19,8 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s - Right Brain Group LLC',
-  ogImage: '/images/right-brain-social-banner.jpg',
-  twitterImage: '/images/right-brain-social-banner.jpg',
+  ogImage: '/images/marketing_people_light.svg',
+  twitterImage: '/images/marketing_people_light.svg',
   twitterCard: 'summary_large_image'
 })
 </script>

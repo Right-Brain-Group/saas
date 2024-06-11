@@ -2,11 +2,17 @@
     <div :class="ui.wrapper" v-bind="attrs">
       <slot name="top" />
   
-      <UContainer :class="ui.container">
+      <UContainer :class="ui.container" class="gap-6 sm:gap-6">
+        <div class="flex justify-center">
+        <NuxtImg
+            :src="page.hero.image.src"
+            class="pointer-events-none max-w-xs w-full sm:max-w-xs lg:max-w-sm 2xl:max-w-md"
+            alt="Right Brain Group Website - Dr. Brain"
+            width="420"
+            height="420"
+          />
+        </div>
         <div :class="ui.base">
-          <!-- <div v-if="$slots.headline" :class="ui.headline">
-            <slot name="headline" />
-          </div> -->
         <h1>
             <span :class="ui.title" style="padding-right: 13px;">
                 <slot name="title">
@@ -27,7 +33,7 @@
   
           <div v-if="links?.length || $slots.links" :class="ui.links">
             <slot name="links">
-              <UButton v-for="(link, index) in links" :key="index" v-bind="link" @click="link.click" />
+              <UButton v-for="(link, index) in links" :key="index" v-bind="link" @click="link.click" title="Right Brain Group LLC"/>
             </slot>
           </div>
         </div>
@@ -44,6 +50,11 @@
   import { twJoin } from 'tailwind-merge'
   import type { Button } from '#ui/types'
   
+  const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
+
   defineOptions({
     inheritAttrs: false
   })
@@ -94,10 +105,9 @@
     )
   
     return {
-      wrapper: 'py-24 sm:py-32 md:py-40 relative',
+      wrapper: 'h-svh flex sm:py-32 md:py-40 relative',
       container,
       base,
-      headline: 'mb-10',
       title: 'text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl',
       animated: 'animate-text text-5xl sm:text-7xl font-bold bg-gradient-to-r from-fusion-500 via-fusion-500 to-fusion-500 bg-clip-text text-transparent',
       description: 'mt-6 text-lg tracking-tight text-gray-600 dark:text-gray-300',

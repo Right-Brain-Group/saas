@@ -16,24 +16,13 @@ useSeoMeta({
 <template>
   <div v-if="page">
     <AppLandingHero
-      :image="page.hero.image"
       :title="page.hero.title"
       :animated="page.hero.animated"
       :description="page.hero.description"
       :links="page.hero.links"
-      class="sm:pt-24 sm:pb-12 md:pt-36 md:pb-14"
+      class=""
     >
       <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,#fafaf9,transparent)]" />
-      
-      <template #top>
-        <div class="flex justify-center -mt-10">
-        <NuxtImg
-            :src="page.hero.image.src"
-            class="pointer-events-none -mt-20 mb-8 max-w-xs w-full sm:max-w-xs lg:max-w-sm 2xl:max-w-md"
-            alt="Right Brain Group Website - Dr. Brain"
-          />
-        </div>
-      </template>
       
       <template #headline>
 
@@ -79,7 +68,7 @@ useSeoMeta({
       class="!py-0 pb-0 gap-5 my-28"
     >
       <div class="flex justify-center">
-        <UColorModeImage class="w-9/12" :light="section.lightsrc" :dark="section.darksrc"  alt="Website & Branding People" />
+        <UColorModeImage class="w-9/12" :light="section.lightsrc" :dark="section.darksrc"  alt="Website & Branding People" width="auto" height="auto"/>
       </div>
     </ULandingSection>
 
@@ -107,11 +96,11 @@ useSeoMeta({
       v-for="(image, index) in page.images"
       :key="index"
       class="!py-0 mb-8 mt-[8em]">
-      <UColorModeImage class="w-full md:w-10/12 px-12 self-center flex" :light="image.lightsrc" :dark="image.darksrc" alt="Right Brain Group Website Services"  />
+      <UColorModeImage class="w-full md:w-10/12 px-12 self-center flex" :light="image.lightsrc" :dark="image.darksrc" alt="Right Brain Group Website Services" width="auto" height="auto" />
     </ULandingSection>
 
     <ULandingSection
-      class="!py-0"
+      class="!py-0 mb-24"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
       :avatar="page.testimonials.lightsrc"
