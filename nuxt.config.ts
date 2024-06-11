@@ -41,7 +41,7 @@ export default defineNuxtConfig({
   //   redirect: false
   // },
   devtools: {
-    enabled: true
+    enabled: false
   },
   typescript: {
     strict: false
