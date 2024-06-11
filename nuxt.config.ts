@@ -22,10 +22,6 @@ export default defineNuxtConfig({
       globals.forEach(c => c.global = true)
     }
   },
-  plausible: {
-    // Prevent tracking on localhost
-    ignoredHostnames: ['localhost'],
-  },
   colorMode: {
     preference: 'light', // default value of $colorMode.preference
   },
