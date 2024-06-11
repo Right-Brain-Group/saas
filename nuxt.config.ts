@@ -11,26 +11,7 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    '@nuxtjs/partytown'
-    
   ],
-  partytown: {
-    forward: ['$plausible', '$plausible.push'],
-  },
-  app: {
-    head: {
-      script: [
-        { innerHTML: 'window.$plausible = [];' },
-        // Update this
-        {
-          src: 'https://plausible.io/js/script.js',
-          defer: true,
-          type: 'text/partytown',
-          'data-domain': 'rightbraingroup.com',
-        },
-      ],
-    },
-  },
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': (components) => {

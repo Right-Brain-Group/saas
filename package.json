@@ -25,7 +25,6 @@
   "devDependencies": {
     "@nuxt/eslint": "^0.3.10",
     "@nuxthq/studio": "^1.0.15",
-    "@nuxtjs/partytown": "^1.5.0",
     "eslint": "^9.2.0",
     "vue-tsc": "^2.0.16"
   }
