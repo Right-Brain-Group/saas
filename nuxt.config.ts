@@ -25,7 +25,6 @@ export default defineNuxtConfig({
   plausible: {
     // Prevent tracking on localhost
     ignoredHostnames: ['localhost'],
-    domain: 'rightbraingroup.com',
   },
   colorMode: {
     preference: 'light', // default value of $colorMode.preference
