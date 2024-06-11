@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   ssr: true,
   extends: [process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro'],
   modules: [
+    '@nuxtjs/plausible',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
@@ -10,8 +11,9 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxthq/studio',
     '@vueuse/nuxt',
-    'nuxt-og-image',
+    'nuxt-og-image'
   ],
+
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': (components) => {
@@ -19,6 +21,11 @@ export default defineNuxtConfig({
 
       globals.forEach(c => c.global = true)
     }
+  },
+  plausible: {
+    // Prevent tracking on localhost
+    ignoredHostnames: ['localhost'],
+    domain: 'rightbraingroup.com',
   },
   colorMode: {
     preference: 'light', // default value of $colorMode.preference
