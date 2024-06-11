@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   ssr: true,
   extends: [process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro'],
   modules: [
-    '@nuxtjs/plausible',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
