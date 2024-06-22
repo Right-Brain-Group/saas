@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@vueuse/nuxt',
     'nuxt-og-image',
+    "nuxt-gtag"
   ],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -30,6 +31,9 @@ export default defineNuxtConfig({
   routeRules: {
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
+  },
+  gtag: {
+    id: 'G-5YYBHNV09M'
   },
   // supabase: {
   //   redirect: false
