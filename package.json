@@ -20,7 +20,6 @@
     "@nuxt/ui-pro": "^1.2.0",
     "@vueuse/nuxt": "^10.9.0",
     "nuxt": "^3.11.2",
-    "nuxt-gtag": "^2.0.6",
     "nuxt-og-image": "^2.2.4"
   },
   "devDependencies": {
