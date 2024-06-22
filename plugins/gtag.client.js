@@ -6,7 +6,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
     
     window.dataLayer = window.dataLayer || [];
-    
+    //hi
     gtag("js", new Date());
     gtag("config", gtagId);
     
