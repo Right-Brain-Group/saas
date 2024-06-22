@@ -32,9 +32,6 @@ export default defineNuxtConfig({
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
-  gtag: {
-    id: 'G-5YYBHNV09M'
-  },
   // supabase: {
   //   redirect: false
   // },
