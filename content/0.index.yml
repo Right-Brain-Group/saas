@@ -20,7 +20,7 @@ hero:
       icon: i-heroicons-beaker-solid
       target: _self
     - label: Book Meeting Now
-      to: https://calendar.app.google/PFyuyKtnQiTH1J4g9
+      to: https://calendar.app.google/KRG9jGxhACsNm2FV9
       size: xl
       class: bg-sky-400 hover:bg-sky-300 hover:dark:bg-sky-600      
       icon: i-heroicons-calendar-days
