@@ -30,6 +30,11 @@ export default defineAppConfig({
         size: 'md'
       }
     },
+    landing: {
+      section: {
+        container: 'max-w-screen-2xl'
+      }
+    },
     input: {
       default: {
         size: 'md'

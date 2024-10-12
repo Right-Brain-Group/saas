@@ -11,7 +11,7 @@ label: 'Process',
 //   to: '/blog'
 // }, {
 //  label: 'Contact',
-//  to: 'https://calendar.app.google/PFyuyKtnQiTH1J4g9'
+//  to: 'https://calendar.app.google/KRG9jGxhACsNm2FV9'
 //}
 ]
 
@@ -28,7 +28,8 @@ label: 'Process',
 </script>
 
 <template>
-  <UHeader>
+  <UHeader :ui="{ container: 'max-w-full' }">
+  
     <template #logo>
       <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto" alt="Right Brain Group LLC" />
       <h2>Right Brain Group</h2>
@@ -44,7 +45,7 @@ label: 'Process',
         label="Book Meeting Now"
         icon="i-heroicons-calendar-days"
         target="_blank"
-        to="https://calendar.app.google/PFyuyKtnQiTH1J4g9"
+        to="https://calendar.app.google/KRG9jGxhACsNm2FV9"
         class="hidden lg:flex bg-sky-400 hover:bg-sky-300 hover:dark:bg-sky-600 "
         title="Book now with Right Brain Group LLC"
       />
