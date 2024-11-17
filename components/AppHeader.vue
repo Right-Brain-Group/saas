@@ -1,47 +1,49 @@
 <script setup lang="ts">
-import { inject, ref, computed, type Ref } from 'vue'
+import { inject, ref, computed, type Ref } from 'vue';
+import type { NavItem } from '@nuxt/content';
 
-// Define NavItem type locally or use the correct import from @nuxt/content
-type NavItem = {
-  label: string
-  to: string
-  children?: NavItem[]
-}
+// Inject navigation and ensure fallback to an empty array if not provided
+const navigation = inject<Ref<NavItem[]>>('navigation', ref([]));
 
-// Inject navigation or provide a fallback as a Ref
-const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
-
-// Define links as a plain array of NavItem
-const links: NavItem[] = [
+// Links for the navigation menu
+const links = [
   {
     label: 'Work Samples',
-    to: '/work'
+    icon: 'i-heroicons-book-open',
+    to: '/work',
   },
   {
     label: 'RBG Labs',
-    to: 'http://rightbrainlabs.notion.site'
-  }
-]
+    icon: 'i-heroicons-square-3-stack-3d',
+    to: 'http://rightbrainlabs.notion.site',
+  },
+];
 
-// Map content navigation safely using computed for reactivity
-const mappedNavigation = computed(() => {
-  if (!navigation?.value?.length) return []
-  return navigation.value.map(item => ({
+// Computed function to map navigation
+const mappedNavigation = computed(() =>
+  navigation.value.map(item => ({
     label: item.label,
-    to: item.to,
-    children: item.children || []
+    icon: item.icon || 'i-heroicons-document',
+    to: item.to || '#',
   }))
-})
+);
 </script>
 
 <template :ui="{ container: 'max-w-full' }">
-  <UHeader :links="links">
+  <UHeader :links="links" >
     <template #logo>
-      <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto" alt="Right Brain Group LLC" />
+      <NuxtImg
+        src="/images/rbg-logo.svg"
+        width="29"
+        height="auto"
+        alt="Right Brain Group LLC"
+      />
       <h2>Right Brain Group</h2>
     </template>
 
     <template #right>
+      
+      <!-- Right Section (Desktop Buttons) -->
       <UButton
         label="Book Meeting Now"
         icon="i-heroicons-calendar-days"
@@ -53,8 +55,8 @@ const mappedNavigation = computed(() => {
     </template>
 
     <template #panel>
-      <!-- Pass the mapped navigation to the UNavigationTree -->
-      <UNavigationTree :links="mappedNavigation" default-open :multiple="false" />
+      <!-- Right Section (Desktop Buttons) -->
+      <UNavigationTree :links="links" />
     </template>
   </UHeader>
 </template>
