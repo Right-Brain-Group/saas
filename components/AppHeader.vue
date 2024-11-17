@@ -1,72 +1,60 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
+import { inject, ref, computed, type Ref } from 'vue'
 
+// Define NavItem type locally or use the correct import from @nuxt/content
+type NavItem = {
+  label: string
+  to: string
+  children?: NavItem[]
+}
+
+// Inject navigation or provide a fallback as a Ref
 const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
 
-const links = [{
-label: 'Process',
- to: '/docs'
-}, //{
-//   label: 'Blog',
-//   to: '/blog'
-// }, {
-//  label: 'Contact',
-//  to: 'https://calendar.app.google/KRG9jGxhACsNm2FV9'
-//}
+// Define links as a plain array of NavItem
+const links: NavItem[] = [
+  {
+    label: 'Work Samples',
+    to: '/work'
+  },
+  {
+    label: 'RBG Labs',
+    to: 'http://rightbrainlabs.notion.site'
+  }
 ]
 
-// const appConfig = useAppConfig()
-//   const { toggleContentSearch } = useUIState()
-//   const { metaSymbol } = useShortcuts()
-  
-//   defineProps({
-//     label: {
-//       type: String,
-//       default: 'Search...'
-//     }
-//   })
+// Map content navigation safely using computed for reactivity
+const mappedNavigation = computed(() => {
+  if (!navigation?.value?.length) return []
+  return navigation.value.map(item => ({
+    label: item.label,
+    to: item.to,
+    children: item.children || []
+  }))
+})
 </script>
 
-<template>
-  <UHeader :ui="{ container: 'max-w-full' }">
-  
+<template :ui="{ container: 'max-w-full' }">
+  <UHeader :links="links">
     <template #logo>
       <NuxtImg src="/images/rbg-logo.svg" width="29" height="auto" alt="Right Brain Group LLC" />
       <h2>Right Brain Group</h2>
     </template>
 
     <template #right>
-      <!-- <UButton
-        label="Sign in"
-        color="gray"
-        to="/login"
-      />-->
       <UButton
         label="Book Meeting Now"
         icon="i-heroicons-calendar-days"
         target="_blank"
         to="https://calendar.app.google/KRG9jGxhACsNm2FV9"
-        class="hidden lg:flex bg-sky-400 hover:bg-sky-300 hover:dark:bg-sky-600 "
+        class="hidden lg:flex bg-sky-400 hover:bg-sky-300 hover:dark:bg-sky-600"
         title="Book now with Right Brain Group LLC"
       />
-      
-      <!-- <UTooltip text="Search" :shortcuts="['⌘', 'k']">
-        <UButton
-          :icon="appConfig.ui.icons.search"
-          v-bind="((!!label ? $ui?.button?.input : $ui?.button?.secondary) as any)"
-          aria-label="Search"
-          :class="[!!label && 'flex-1 border-0 ring-0']"
-          @click="toggleContentSearch"
-        ></UButton>
-      </UTooltip> -->
-      <!-- <UColorModeToggle /> -->
     </template>
 
-    <!-- <template #panel>
-      <UNavigationTree
-        :links="mapContentNavigation(navigation)"
-        default-open
-      />
-    </template> -->
+    <template #panel>
+      <!-- Pass the mapped navigation to the UNavigationTree -->
+      <UNavigationTree :links="mappedNavigation" default-open :multiple="false" />
+    </template>
   </UHeader>
 </template>

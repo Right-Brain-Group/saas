@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
   extends: [process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro'],
+
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -12,6 +13,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
   ],
+
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': (components) => {
@@ -20,31 +22,36 @@ export default defineNuxtConfig({
       globals.forEach(c => c.global = true)
     }
   },
+
   colorMode: {
     preference: 'light', // default value of $colorMode.preference
   },
+
   css: ['/assets/css/main.css'],
-  ui: {
-    icons: ['heroicons', 'simple-icons']
-  },
+
+
   routeRules: {
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
+
   runtimeConfig: {
     public: {
       gtagId: 'G-5YYBHNV09M',
     }
   },
+
   // supabase: {
   //   redirect: false
   // },
   devtools: {
     enabled: false
   },
+
   typescript: {
     strict: false
   },
+
   eslint: {
     config: {
       stylistic: {
@@ -52,5 +59,7 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
-  }
+  },
+
+  compatibilityDate: '2024-11-17'
 })
